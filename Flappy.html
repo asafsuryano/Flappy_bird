@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        height: 95vh;
+        width: 98vw;
+    }
+    canvas.pipe1{
+        background-color: green;
+        height: 40vh;
+        width: 50px;
+
+    }
+    canvas.pipe3{
+        background-color: green;
+        height: 30vh;
+        width: 50px;
+    }
+    canvas.pipe2{
+        background-color: white;
+        width: 50px;
+        height: 30vh;
+    }
+    div.container{
+        width: 50px;
+        height: 95vh;
+    }
+    div.main{
+        display: flex;
+        justify-content: space-between;
+    }
+    canvas.player{
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 100px;
+    }
+</style>
+</head>
+<body id="main">
+    <div id="mainScreen">
+    <canvas id="player" class="player"></canvas>
+    </div>
+    <script src="bird.js"></script>
+</body>
+</html>

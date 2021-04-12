@@ -1,0 +1,15 @@
+.pipe_upper{
+    position: absolute;
+    background-color: green;
+    z-index: 2;
+}
+.pipe_lower{
+    position: absolute;
+    background-color: green;
+    z-index: 2;
+}
+.pipe{
+    position: absolute;
+    background-color: green;
+    z-index: 2;
+}
