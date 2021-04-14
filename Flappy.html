@@ -3,31 +3,12 @@
 <head>
 <style>
     body{
+        
         height: 95vh;
         width: 98vw;
     }
-    canvas.pipe1{
-        background-color: green;
-        height: 40vh;
-        width: 50px;
-
-    }
-    canvas.pipe3{
-        background-color: green;
-        height: 30vh;
-        width: 50px;
-    }
-    canvas.pipe2{
-        background-color: white;
-        width: 50px;
-        height: 30vh;
-    }
-    div.container{
-        width: 50px;
-        height: 95vh;
-    }
     div.main{
-        display: flex;
+        display: inline-block;
         justify-content: space-between;
     }
     canvas.player{
@@ -37,12 +18,20 @@
         position: absolute;
         left: 100px;
     }
+    div.uiDiv{
+        padding-bottom: 1vh;
+    }
+    
 </style>
 </head>
 <body id="main">
     <div id="mainScreen">
     <canvas id="player" class="player"></canvas>
+    <div class="uiDiv">
+        <h2 id="scoreHeader">Score:0</h2>
+        <button id="btnSound" onclick="soundClicked()"><img id="soundPic" src="soundMute.PNG" width="20px" height="20px"></button>
     </div>
+    <audio id="gameAudio" src="theme.mp3"></audio>
     <script src="bird.js"></script>
 </body>
 </html>
